@@ -106,6 +106,77 @@
       font-weight: 700;
       display: inline-block;
     }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+      .page-hero {
+        padding: 100px 0 50px;
+      }
+      .page-hero h1 {
+        font-size: 2.5rem;
+      }
+      .page-hero p {
+        font-size: 1rem;
+      }
+      .featured-news {
+        grid-template-columns: 1fr;
+      }
+      .featured-news img {
+        height: 250px;
+      }
+      .featured-content {
+        padding: 30px;
+      }
+      .featured-content h2 {
+        font-size: 2rem;
+      }
+      .featured-content p {
+        font-size: 1rem;
+      }
+      .news-grid-extended {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .news-card-large img {
+        height: 200px;
+      }
+      .news-card-content {
+        padding: 20px;
+      }
+      .news-card-content h3 {
+        font-size: 1.3rem;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .page-hero h1 {
+        font-size: 3rem;
+      }
+      .featured-content h2 {
+        font-size: 2.5rem;
+      }
+      .news-grid-extended {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-hero {
+        padding: 80px 0 40px;
+      }
+      .page-hero h1 {
+        font-size: 2rem;
+      }
+      .featured-content {
+        padding: 20px;
+      }
+      .featured-content h2 {
+        font-size: 1.8rem;
+      }
+      .news-card-content h3 {
+        font-size: 1.2rem;
+      }
+    }
   </style>
 </head>
 
@@ -114,6 +185,11 @@
   <header class="main-header">
     <div class="container">
       <a href="/index.html" class="logo">RGQT</a>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav class="main-nav">
         <ul>
           <li><a href="/teams.html">Teams</a></li>
@@ -215,12 +291,81 @@
 
   <footer class="main-footer">
     <div class="container">
-      <p>&copy; 2025 RAGEQUIT ESPORTS, LLC. ALL RIGHTS RESERVED.</p>
-      <div class="social-links">
-        <a href="#">Twitch</a> | <a href="#">Twitter</a> | <a href="#">YouTube</a> | <a href="#">Instagram</a>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About RGQT</h4>
+          <p>RageQuit Esports is a premier competitive gaming organization dedicated to excellence, teamwork, and dominating the competition.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/teams.html">Our Teams</a></li>
+            <li><a href="/schedule.html">Match Schedule</a></li>
+            <li><a href="/news.html">Latest News</a></li>
+            <li><a href="/shop.html">Merch Shop</a></li>
+            <li><a href="/about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Sponsorships</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Kit</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#">Twitch</a>
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+            <a href="#">Instagram</a>
+            <a href="#">Discord</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 RAGEQUIT ESPORTS, LLC. ALL RIGHTS RESERVED.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Code of Conduct</a>
+        </div>
       </div>
     </div>
   </footer>
+
+  <script>
+    // Hamburger menu functionality
+    const hamburger = document.querySelector('.hamburger');
+    const mainNav = document.querySelector('.main-nav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mainNav.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    const navLinks = document.querySelectorAll('.main-nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mainNav.classList.remove('active');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !mainNav.contains(e.target)) {
+        hamburger.classList.remove('active');
+        mainNav.classList.remove('active');
+      }
+    });
+  </script>
 
 </body>
 
