@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule - RageQuit [RGQT] Esports</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    .page-hero {
+      padding: 150px 0 80px;
+      text-align: center;
+      background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+    }
+    .page-hero h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+    .schedule-section {
+      padding: 60px 0;
+    }
+    .schedule-filters {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .filter-btn {
+      padding: 10px 25px;
+      margin: 0 10px;
+      background-color: var(--color-surface);
+      color: var(--color-text);
+      border: 2px solid #333;
+      border-radius: 5px;
+      font-family: var(--font-body);
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      color: #fff;
+    }
+    .schedule-list {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .schedule-item {
+      background-color: var(--color-surface);
+      border: 1px solid #333;
+      border-left: 4px solid var(--color-primary);
+      border-radius: 5px;
+      padding: 30px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+    .schedule-item:hover {
+      transform: translateX(10px);
+    }
+    .schedule-date {
+      min-width: 120px;
+    }
+    .schedule-date .day {
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      line-height: 1;
+      color: var(--color-primary);
+    }
+    .schedule-date .month {
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .schedule-info {
+      flex: 1;
+      padding: 0 30px;
+    }
+    .schedule-info h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .schedule-info .tournament {
+      color: var(--color-text-dark);
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .schedule-info .time {
+      color: var(--color-text);
+    }
+    .schedule-teams {
+      text-align: right;
+      min-width: 150px;
+    }
+    .schedule-teams .matchup {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      color: #fff;
+    }
+    .schedule-status {
+      padding: 8px 20px;
+      background-color: var(--color-primary);
+      color: #fff;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+    .schedule-status.completed {
+      background-color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="/index.html" class="logo">RGQT</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/teams.html">Teams</a></li>
+          <li><a href="/schedule.html">Schedule</a></li>
+          <li><a href="/news.html">News</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>MATCH SCHEDULE</h1>
+        <p>Follow our journey to victory</p>
+      </div>
+    </section>
+
+    <section class="schedule-section">
+      <div class="container">
+        <div class="schedule-filters">
+          <button class="filter-btn active">All Matches</button>
+          <button class="filter-btn">Upcoming</button>
+          <button class="filter-btn">Completed</button>
+          <button class="filter-btn">VALORANT</button>
+        </div>
+
+        <div class="schedule-list">
+          <div class="schedule-item">
+            <div class="schedule-date">
+              <div class="day">05</div>
+              <div class="month">OCT</div>
+            </div>
+            <div class="schedule-info">
+              <h3>RGQT vs TITANS</h3>
+              <p class="tournament">VALORANT Champions Tour - Playoffs</p>
+              <p class="time">8:00 PM EDT</p>
+            </div>
+            <div class="schedule-teams">
+              <div class="matchup">RGQT vs TTN</div>
+              <div style="margin-top: 10px;">
+                <span class="schedule-status">Upcoming</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-item">
+            <div class="schedule-date">
+              <div class="day">12</div>
+              <div class="month">OCT</div>
+            </div>
+            <div class="schedule-info">
+              <h3>RGQT vs PHOENIX</h3>
+              <p class="tournament">VALORANT Champions Tour - Finals</p>
+              <p class="time">7:30 PM EDT</p>
+            </div>
+            <div class="schedule-teams">
+              <div class="matchup">RGQT vs PHX</div>
+              <div style="margin-top: 10px;">
+                <span class="schedule-status">Upcoming</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-item">
+            <div class="schedule-date">
+              <div class="day">28</div>
+              <div class="month">SEP</div>
+            </div>
+            <div class="schedule-info">
+              <h3>RGQT vs STORM</h3>
+              <p class="tournament">VALORANT Champions Tour - Semifinals</p>
+              <p class="time">6:00 PM EDT</p>
+            </div>
+            <div class="schedule-teams">
+              <div class="matchup">RGQT 3-0 STM</div>
+              <div style="margin-top: 10px;">
+                <span class="schedule-status completed">Victory</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-item">
+            <div class="schedule-date">
+              <div class="day">21</div>
+              <div class="month">SEP</div>
+            </div>
+            <div class="schedule-info">
+              <h3>RGQT vs VORTEX</h3>
+              <p class="tournament">VALORANT Champions Tour - Quarterfinals</p>
+              <p class="time">8:00 PM EDT</p>
+            </div>
+            <div class="schedule-teams">
+              <div class="matchup">RGQT 2-1 VTX</div>
+              <div style="margin-top: 10px;">
+                <span class="schedule-status completed">Victory</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-item">
+            <div class="schedule-date">
+              <div class="day">14</div>
+              <div class="month">SEP</div>
+            </div>
+            <div class="schedule-info">
+              <h3>RGQT vs ECLIPSE</h3>
+              <p class="tournament">VALORANT Champions Tour - Group Stage</p>
+              <p class="time">7:00 PM EDT</p>
+            </div>
+            <div class="schedule-teams">
+              <div class="matchup">RGQT 2-0 ECL</div>
+              <div style="margin-top: 10px;">
+                <span class="schedule-status completed">Victory</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 RAGEQUIT ESPORTS, LLC. ALL RIGHTS RESERVED.</p>
+      <div class="social-links">
+        <a href="#">Twitch</a> | <a href="#">Twitter</a> | <a href="#">YouTube</a> | <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

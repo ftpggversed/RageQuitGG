@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RageQuit [RGQT] Teams</title>
+  <link rel="stylesheet" href="teams.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html" class="logo">RGQT</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/teams.html">Teams</a></li>
+          <li><a href="/schedule.html">Schedule</a></li>
+          <li><a href="/news.html">News</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="teams-section">
+      <div class="container">
+        <h2>OUR TEAMS</h2>
+
+        <!-- Game Navigation -->
+        <div class="game-nav">
+          <button class="game-btn active" data-game="valorant">VALORANT</button>
+          <button class="game-btn" data-game="apex">APEX LEGENDS</button>
+          <button class="game-btn" data-game="lol">LEAGUE OF LEGENDS</button>
+          <button class="game-btn" data-game="rl">ROCKET LEAGUE</button>
+        </div>
+
+        <!-- Roster Grid -->
+        <div class="roster-grid" id="valorant-roster">
+          <!-- Player Card 1 -->
+          <div class="player-card">
+            <div class="player-photo" style="background-image: url('https://via.placeholder.com/200x200/111/FF0066?text=Vex');"></div>
+            <h3>VEX</h3>
+            <p>Alex Chen – In-Game Leader (IGL)</p>
+            <p class="player-quote">"I don't play mind games. I win them."</p>
+            <div class="social-icons">
+              <a href="#">Twitch</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+
+          <!-- Player Card 2 -->
+          <div class="player-card">
+            <div class="player-photo" style="background-image: url('https://via.placeholder.com/200x200/111/FF0066?text=Blaze');"></div>
+            <h3>BLAZE</h3>
+            <p>Jason Lee – Duelist</p>
+            <p class="player-quote">"I bring the fire to every match."</p>
+            <div class="social-icons">
+              <a href="#">Twitch</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+
+          <!-- Player Card 3 -->
+          <div class="player-card">
+            <div class="player-photo" style="background-image: url('https://via.placeholder.com/200x200/111/FF0066?text=Ghost');"></div>
+            <h3>GHOST</h3>
+            <p>Samira Patel – Sentinel</p>
+            <p class="player-quote">"I protect the team with precision."</p>
+            <div class="social-icons">
+              <a href="#">Twitch</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+
+          <!-- Player Card 4 -->
+          <div class="player-card">
+            <div class="player-photo" style="background-image: url('https://via.placeholder.com/200x200/111/FF0066?text=Recon');"></div>
+            <h3>RECON</h3>
+            <p>Liam Nguyen – Initiator</p>
+            <p class="player-quote">"Information wins matches."</p>
+            <div class="social-icons">
+              <a href="#">Twitch</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+
+          <!-- Player Card 5 -->
+          <div class="player-card">
+            <div class="player-photo" style="background-image: url('https://via.placeholder.com/200x200/111/FF0066?text=Nova');"></div>
+            <h3>NOVA</h3>
+            <p>Emma Torres – Smokes</p>
+            <p class="player-quote">"Control the battlefield, control the game."</p>
+            <div class="social-icons">
+              <a href="#">Twitch</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 RAGEQUIT ESPORTS, LLC. ALL RIGHTS RESERVED.</p>
+      <div class="social-links">
+        <a href="#">Twitch</a> | <a href="#">Twitter</a> | <a href="#">YouTube</a> | <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Game filter functionality
+    const gameButtons = document.querySelectorAll('.game-btn');
+    const rosters = {
+      valorant: document.getElementById('valorant-roster')
+      // Add more rosters as you implement them
+    };
+
+    gameButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active from all buttons
+        gameButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Hide all rosters
+        Object.values(rosters).forEach(r => r.style.display = 'none');
+
+        // Show selected roster
+        const game = btn.getAttribute('data-game');
+        if (rosters[game]) {
+          rosters[game].style.display = 'grid';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

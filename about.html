@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - RageQuit [RGQT] Esports</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    .page-hero {
+      padding: 150px 0 80px;
+      text-align: center;
+      background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+    }
+    .page-hero h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+    .about-intro {
+      padding: 80px 0;
+      text-align: center;
+    }
+    .about-intro p {
+      max-width: 900px;
+      margin: 0 auto 30px;
+      font-size: 1.3rem;
+      line-height: 1.9;
+    }
+    .stats-section {
+      background-color: var(--color-surface);
+      padding: 60px 0;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      text-align: center;
+    }
+    .stat-item {
+      padding: 30px;
+    }
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: 4rem;
+      color: var(--color-primary);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .stat-label {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--color-text-dark);
+    }
+    .values-section {
+      padding: 80px 0;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-top: 50px;
+    }
+    .value-card {
+      background-color: var(--color-surface);
+      border: 1px solid #333;
+      border-top: 4px solid var(--color-primary);
+      border-radius: 5px;
+      padding: 40px 30px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .value-card:hover {
+      transform: translateY(-10px);
+    }
+    .value-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .value-card h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .value-card p {
+      line-height: 1.7;
+      color: var(--color-text);
+    }
+    .team-section {
+      background-color: var(--color-surface);
+      padding: 80px 0;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-top: 50px;
+    }
+    .team-member {
+      text-align: center;
+    }
+    .team-photo {
+      width: 100%;
+      height: 300px;
+      background-color: #333;
+      background-image: url('https://via.placeholder.com/300x300/111/0099FF?text=Team+Member');
+      background-size: cover;
+      background-position: center;
+      border: 3px solid var(--color-primary);
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .team-member h3 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+    .team-member .role {
+      color: var(--color-primary);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .team-member p {
+      color: var(--color-text-dark);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="/index.html" class="logo">RGQT</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/teams.html">Teams</a></li>
+          <li><a href="/schedule.html">Schedule</a></li>
+          <li><a href="/news.html">News</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>ABOUT RAGEQUIT</h1>
+        <p>Forged in fire. Bound by victory.</p>
+      </div>
+    </section>
+
+    <section class="about-intro">
+      <div class="container">
+        <h2>OUR STORY</h2>
+        <p>
+          RageQuit wasn't born in a boardroom; it was forged in the final seconds of a losing match. We took that raw
+          energy—the kind that makes you want to flip a table—and channeled it into a winning formula. We don't quit on
+          the game; we make the other team rage quit.
+        </p>
+        <p>
+          From humble beginnings in local tournaments to competing on the world stage, RageQuit has become synonymous
+          with excellence, determination, and an unrelenting drive to win. We're not just a team—we're a movement.
+        </p>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">47</div>
+            <div class="stat-label">Tournament Wins</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">12</div>
+            <div class="stat-label">Championship Titles</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">500K+</div>
+            <div class="stat-label">Fans Worldwide</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Years Competing</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="values-section">
+      <div class="container">
+        <h2>OUR VALUES</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">🔥</div>
+            <h3>PASSION</h3>
+            <p>We play with heart and soul. Every match, every round, every moment—we give it everything we've got.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🎯</div>
+            <h3>EXCELLENCE</h3>
+            <p>Good isn't good enough. We strive for perfection in every aspect of our game and organization.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3>TEAMWORK</h3>
+            <p>Individual skill wins rounds, but teamwork wins championships. We rise and fall together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <div class="container">
+        <h2>LEADERSHIP TEAM</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="team-photo"></div>
+            <h3>ALEX "RAGE" CHEN</h3>
+            <p class="role">Founder & CEO</p>
+            <p>Former pro player turned visionary leader. Alex founded RageQuit with a mission to redefine esports excellence.</p>
+          </div>
+          <div class="team-member">
+            <div class="team-photo"></div>
+            <h3>SARAH MARTINEZ</h3>
+            <p class="role">Head Coach</p>
+            <p>Strategic mastermind with 10+ years of coaching experience. Sarah has led multiple teams to championship victories.</p>
+          </div>
+          <div class="team-member">
+            <div class="team-photo"></div>
+            <h3>MIKE "STRAT" JOHNSON</h3>
+            <p class="role">Analyst & Manager</p>
+            <p>Data-driven strategist who turns numbers into wins. Mike's analysis gives our team the competitive edge.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 RAGEQUIT ESPORTS, LLC. ALL RIGHTS RESERVED.</p>
+      <div class="social-links">
+        <a href="#">Twitch</a> | <a href="#">Twitter</a> | <a href="#">YouTube</a> | <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

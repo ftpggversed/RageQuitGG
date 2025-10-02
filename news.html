@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News - RageQuit [RGQT] Esports</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    .page-hero {
+      padding: 150px 0 80px;
+      text-align: center;
+      background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+    }
+    .page-hero h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+    .news-page-section {
+      padding: 60px 0;
+    }
+    .featured-news {
+      background-color: var(--color-surface);
+      border: 1px solid #333;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+    .featured-news img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .featured-content {
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .featured-content .category {
+      color: var(--color-primary);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+    .featured-content h2 {
+      font-size: 3rem;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .featured-content p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+    .featured-content .btn {
+      align-self: flex-start;
+    }
+    .news-grid-extended {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .news-card-large {
+      background-color: var(--color-surface);
+      border: 1px solid #333;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .news-card-large:hover {
+      transform: translateY(-10px);
+    }
+    .news-card-large img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+    .news-card-content {
+      padding: 25px;
+    }
+    .news-card-content .date {
+      color: var(--color-text-dark);
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    .news-card-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    .news-card-content p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .news-card-content a {
+      font-weight: 700;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="/index.html" class="logo">RGQT</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/teams.html">Teams</a></li>
+          <li><a href="/schedule.html">Schedule</a></li>
+          <li><a href="/news.html">News</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>LATEST INTEL</h1>
+        <p>Stay updated with RageQuit Esports</p>
+      </div>
+    </section>
+
+    <section class="news-page-section">
+      <div class="container">
+        <!-- Featured News -->
+        <div class="featured-news">
+          <img src="https://via.placeholder.com/600x400/111/0099FF?text=Championship+Victory" alt="Championship">
+          <div class="featured-content">
+            <span class="category">Match Recap</span>
+            <h2>RGQT DOMINATES THE FINALS!</h2>
+            <p>In a stunning display of skill and teamwork, RageQuit secured the championship title with a flawless 3-0 victory. Our roster proved why they're the best in the game.</p>
+            <a href="#" class="btn btn-primary">Read Full Story</a>
+          </div>
+        </div>
+
+        <!-- News Grid -->
+        <div class="news-grid-extended">
+          <article class="news-card-large">
+            <img src="https://via.placeholder.com/400x250/111/0099FF?text=Player+Spotlight" alt="VEX">
+            <div class="news-card-content">
+              <p class="date">October 1, 2025</p>
+              <h3>PLAYER SPOTLIGHT: MEET 'VEX'</h3>
+              <p>Get to know the strategic mastermind behind our victories. VEX joins as our new In-Game Leader.</p>
+              <a href="#">Read More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="news-card-large">
+            <img src="https://via.placeholder.com/400x250/111/0099FF?text=Merch+Drop" alt="Jersey">
+            <div class="news-card-content">
+              <p class="date">September 28, 2025</p>
+              <h3>NEW MERCH: THE 'RAGE' JERSEY</h3>
+              <p>The official 2025 Pro Jersey is now available. Wear the colors with pride and support your team.</p>
+              <a href="#">Shop Now &rarr;</a>
+            </div>
+          </article>
+
+          <article class="news-card-large">
+            <img src="https://via.placeholder.com/400x250/111/0099FF?text=Tournament+Announcement" alt="Tournament">
+            <div class="news-card-content">
+              <p class="date">September 25, 2025</p>
+              <h3>RGQT QUALIFIES FOR WORLDS</h3>
+              <p>After an incredible season, we've secured our spot at the World Championships. The journey continues.</p>
+              <a href="#">Read More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="news-card-large">
+            <img src="https://via.placeholder.com/400x250/111/0099FF?text=Behind+The+Scenes" alt="Training">
+            <div class="news-card-content">
+              <p class="date">September 20, 2025</p>
+              <h3>BEHIND THE SCENES: TRAINING DAY</h3>
+              <p>Take a look at what goes into preparing for championship-level competition. Hard work pays off.</p>
+              <a href="#">Read More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="news-card-large">
+            <img src="https://via.placeholder.com/400x250/111/0099FF?text=Partnership" alt="Sponsor">
+            <div class="news-card-content">
+              <p class="date">September 15, 2025</p>
+              <h3>NEW PARTNERSHIP ANNOUNCEMENT</h3>
+              <p>We're excited to announce our partnership with leading gaming peripheral brand HyperGear.</p>
+              <a href="#">Read More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="news-card-large">
+            <img src="https://via.placeholder.com/400x250/111/0099FF?text=Community+Event" alt="Event">
+            <div class="news-card-content">
+              <p class="date">September 10, 2025</p>
+              <h3>MEET & GREET: FAN EVENT</h3>
+              <p>Join us for an exclusive meet and greet with the team. Limited spots available, register now!</p>
+              <a href="#">Read More &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 RAGEQUIT ESPORTS, LLC. ALL RIGHTS RESERVED.</p>
+      <div class="social-links">
+        <a href="#">Twitch</a> | <a href="#">Twitter</a> | <a href="#">YouTube</a> | <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

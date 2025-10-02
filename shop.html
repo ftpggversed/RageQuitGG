@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - RageQuit [RGQT] Esports</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    .page-hero {
+      padding: 150px 0 80px;
+      text-align: center;
+      background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+    }
+    .page-hero h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+    .shop-section {
+      padding: 60px 0;
+    }
+    .shop-filters {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .filter-btn {
+      padding: 10px 25px;
+      margin: 0 10px;
+      background-color: var(--color-surface);
+      color: var(--color-text);
+      border: 2px solid #333;
+      border-radius: 5px;
+      font-family: var(--font-body);
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      color: #fff;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    .product-card {
+      background-color: var(--color-surface);
+      border: 1px solid #333;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+    .product-card:hover {
+      transform: translateY(-10px);
+      border-color: var(--color-primary);
+    }
+    .product-image {
+      width: 100%;
+      height: 350px;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .product-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: var(--color-primary);
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 3px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+    }
+    .product-badge.sold-out {
+      background-color: #666;
+    }
+    .product-info {
+      padding: 25px;
+    }
+    .product-category {
+      color: var(--color-text-dark);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .product-info h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+    .product-price {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      color: var(--color-primary);
+      margin-bottom: 20px;
+    }
+    .product-info .btn {
+      width: 100%;
+      text-align: center;
+      display: block;
+    }
+    .product-info .btn:disabled {
+      background-color: #666;
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="/index.html" class="logo">RGQT</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/teams.html">Teams</a></li>
+          <li><a href="/schedule.html">Schedule</a></li>
+          <li><a href="/news.html">News</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>OFFICIAL MERCH</h1>
+        <p>Represent RageQuit with pride</p>
+      </div>
+    </section>
+
+    <section class="shop-section">
+      <div class="container">
+        <div class="shop-filters">
+          <button class="filter-btn active">All Products</button>
+          <button class="filter-btn">Jerseys</button>
+          <button class="filter-btn">Apparel</button>
+          <button class="filter-btn">Accessories</button>
+        </div>
+
+        <div class="product-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/400x500/111/0099FF?text=Pro+Jersey+2025" alt="Pro Jersey">
+              <span class="product-badge">New</span>
+            </div>
+            <div class="product-info">
+              <p class="product-category">Jerseys</p>
+              <h3>PRO JERSEY 2025</h3>
+              <div class="product-price">$79.99</div>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/400x500/111/0099FF?text=Team+Hoodie" alt="Hoodie">
+            </div>
+            <div class="product-info">
+              <p class="product-category">Apparel</p>
+              <h3>TEAM HOODIE</h3>
+              <div class="product-price">$59.99</div>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/400x500/111/0099FF?text=Snapback+Cap" alt="Cap">
+            </div>
+            <div class="product-info">
+              <p class="product-category">Accessories</p>
+              <h3>RGQT SNAPBACK</h3>
+              <div class="product-price">$29.99</div>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/400x500/111/0099FF?text=T-Shirt" alt="T-Shirt">
+              <span class="product-badge">Best Seller</span>
+            </div>
+            <div class="product-info">
+              <p class="product-category">Apparel</p>
+              <h3>CLASSIC TEE</h3>
+              <div class="product-price">$34.99</div>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/400x500/111/0099FF?text=Gaming+Mouse+Pad" alt="Mouse Pad">
+            </div>
+            <div class="product-info">
+              <p class="product-category">Accessories</p>
+              <h3>GAMING MOUSEPAD</h3>
+              <div class="product-price">$24.99</div>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/400x500/111/0099FF?text=Track+Jacket" alt="Jacket">
+            </div>
+            <div class="product-info">
+              <p class="product-category">Apparel</p>
+              <h3>TRACK JACKET</h3>
+              <div class="product-price">$89.99</div>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/400x500/111/0099FF?text=Water+Bottle" alt="Water Bottle">
+            </div>
+            <div class="product-info">
+              <p class="product-category">Accessories</p>
+              <h3>TEAM WATER BOTTLE</h3>
+              <div class="product-price">$19.99</div>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/400x500/111/0099FF?text=Championship+Jersey" alt="Championship Jersey">
+              <span class="product-badge sold-out">Sold Out</span>
+            </div>
+            <div class="product-info">
+              <p class="product-category">Jerseys</p>
+              <h3>CHAMPIONSHIP EDITION</h3>
+              <div class="product-price">$99.99</div>
+              <button class="btn btn-primary" disabled>Sold Out</button>
+            </div>
+          </div>
+
+          <!-- Product 9 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://via.placeholder.com/400x500/111/0099FF?text=Beanie" alt="Beanie">
+            </div>
+            <div class="product-info">
+              <p class="product-category">Accessories</p>
+              <h3>WINTER BEANIE</h3>
+              <div class="product-price">$24.99</div>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 RAGEQUIT ESPORTS, LLC. ALL RIGHTS RESERVED.</p>
+      <div class="social-links">
+        <a href="#">Twitch</a> | <a href="#">Twitter</a> | <a href="#">YouTube</a> | <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
