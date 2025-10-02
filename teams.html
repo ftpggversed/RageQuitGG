@@ -40,32 +40,30 @@
 
         <!-- Game Navigation -->
         <div class="game-nav">
-          <button class="game-btn active" data-game="valorant">VALORANT</button>
-          <button class="game-btn" data-game="apex">APEX LEGENDS</button>
-          <button class="game-btn" data-game="lol">LEAGUE OF LEGENDS</button>
-          <button class="game-btn" data-game="rl">ROCKET LEAGUE</button>
+          <button class="game-btn active" data-game="hypershot">Hypershot</button>
+          
         </div>
 
         <!-- Roster Grid -->
-        <div class="roster-grid" id="valorant-roster">
+        <div class="roster-grid" id="hypershot-roster">
           <!-- Player Card 1 -->
           <div class="player-card">
             <div class="player-photo" style="background-image: url('https://via.placeholder.com/200x200/111/FF0066?text=Vex');"></div>
-            <h3>VEX</h3>
-            <p>Alex Chen – In-Game Leader (IGL)</p>
-            <p class="player-quote">"I don't play mind games. I win them."</p>
+            <h3>Gold 2</h3>
+            <p>GGVersed – In-Game Leader (IGL)</p>
+            <p class="player-quote">"A winner is a loser who played one more round."</p>
             <div class="social-icons">
               <a href="#">Twitch</a>
-              <a href="#">Twitter</a>
-              <a href="#">Instagram</a>
+              <a href="#">tiktok</a>
+              <a href="#">discord</a>
             </div>
           </div>
 
           <!-- Player Card 2 -->
           <div class="player-card">
             <div class="player-photo" style="background-image: url('https://via.placeholder.com/200x200/111/FF0066?text=Blaze');"></div>
-            <h3>BLAZE</h3>
-            <p>Jason Lee – Duelist</p>
+            <h3>Gold 2</h3>
+            <p>Coney – Competitive</p>
             <p class="player-quote">"I bring the fire to every match."</p>
             <div class="social-icons">
               <a href="#">Twitch</a>
@@ -77,8 +75,8 @@
           <!-- Player Card 3 -->
           <div class="player-card">
             <div class="player-photo" style="background-image: url('https://via.placeholder.com/200x200/111/FF0066?text=Ghost');"></div>
-            <h3>GHOST</h3>
-            <p>Samira Patel – Sentinel</p>
+            <h3>Platinum 1</h3>
+            <p>Jbanjan – Competitive</p>
             <p class="player-quote">"I protect the team with precision."</p>
             <div class="social-icons">
               <a href="#">Twitch</a>
@@ -90,8 +88,8 @@
           <!-- Player Card 4 -->
           <div class="player-card">
             <div class="player-photo" style="background-image: url('https://via.placeholder.com/200x200/111/FF0066?text=Recon');"></div>
-            <h3>RECON</h3>
-            <p>Liam Nguyen – Initiator</p>
+            <h3>N/A</h3>
+            <p>Solador – Competitive</p>
             <p class="player-quote">"Information wins matches."</p>
             <div class="social-icons">
               <a href="#">Twitch</a>
@@ -103,8 +101,8 @@
           <!-- Player Card 5 -->
           <div class="player-card">
             <div class="player-photo" style="background-image: url('https://via.placeholder.com/200x200/111/FF0066?text=Nova');"></div>
-            <h3>NOVA</h3>
-            <p>Emma Torres – Smokes</p>
+            <h3>Diamond 2</h3>
+            <p>ZEN_dino – Competitive</p>
             <p class="player-quote">"Control the battlefield, control the game."</p>
             <div class="social-icons">
               <a href="#">Twitch</a>
@@ -137,7 +135,7 @@
         <div class="footer-section">
           <h4>Support</h4>
           <ul>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
             <li><a href="#">Sponsorships</a></li>
             <li><a href="#">Careers</a></li>
             <li><a href="#">Press Kit</a></li>
@@ -197,7 +195,7 @@
     // Game filter functionality
     const gameButtons = document.querySelectorAll('.game-btn');
     const rosters = {
-      valorant: document.getElementById('valorant-roster')
+      hypershot: document.getElementById('hypershot-roster')
       // Add more rosters as you implement them
     };
 

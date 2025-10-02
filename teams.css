@@ -294,29 +294,21 @@ a:hover {
 
 .social-links {
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0;
 }
 
 .social-links a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: var(--color-surface);
-    border: 2px solid #333;
-    border-radius: 5px;
     color: var(--color-text);
-    font-size: 1.2rem;
+    font-size: 0.95rem;
     transition: all 0.3s ease;
+    display: inline-block;
+    margin-bottom: 12px;
 }
 
 .social-links a:hover {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
-    color: #fff;
-    transform: translateY(-3px);
+    color: var(--color-primary);
+    transform: translateX(5px);
 }
 
 .footer-bottom {
@@ -467,21 +459,8 @@ a:hover {
         font-size: 0.85rem;
     }
 
-    /* Social links section spans full width */
-    .footer-section:last-child {
-        grid-column: 1 / -1;
-        text-align: center;
-    }
-
-    .social-links {
-        justify-content: center;
-        gap: 15px;
-    }
-
     .social-links a {
-        width: 35px;
-        height: 35px;
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 
     .footer-bottom {

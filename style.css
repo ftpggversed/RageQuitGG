@@ -678,3 +678,266 @@ a:hover {
         width: 85%;
     }
 }
+
+/* --- CONTACT PAGE STYLES --- */
+
+/* Page Hero */
+.page-hero {
+    background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+    padding: 150px 0 80px;
+    text-align: center;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.page-hero h1 {
+    font-size: 5rem;
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    font-size: 1.3rem;
+    color: var(--color-text-dark);
+    letter-spacing: 1px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: var(--color-background);
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Contact Form */
+.contact-form-container h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    background-color: var(--color-surface);
+    padding: 40px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-background);
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form .btn {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+/* Contact Info */
+.contact-info h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.info-block {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #333;
+}
+
+.info-block:last-child {
+    border-bottom: none;
+}
+
+.info-block h3 {
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.info-block p {
+    color: var(--color-text);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.info-block a {
+    color: var(--color-text);
+    transition: color 0.3s ease;
+}
+
+.info-block a:hover {
+    color: var(--color-primary);
+}
+
+.social-links-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-links-contact a {
+    color: var(--color-text);
+    font-weight: 700;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-links-contact a:hover {
+    color: var(--color-primary);
+    transform: translateX(5px);
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: var(--color-surface);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.faq-item {
+    background-color: var(--color-background);
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+}
+
+.faq-item p {
+    color: var(--color-text);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.faq-item a {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* Contact Page Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .page-hero {
+        padding: 120px 0 60px;
+    }
+
+    .page-hero h1 {
+        font-size: 3rem;
+    }
+
+    .page-hero p {
+        font-size: 1.1rem;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-form-container h2,
+    .contact-info h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 30px 20px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .faq-item {
+        padding: 25px 20px;
+    }
+
+    .faq-item h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .page-hero p {
+        font-size: 1rem;
+    }
+
+    .contact-form-container h2,
+    .contact-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    .faq-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .faq-item p {
+        font-size: 0.95rem;
+    }
+}
